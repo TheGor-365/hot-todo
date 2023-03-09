@@ -16,4 +16,4 @@ test:
 
 production:
   <<: *default
-  database: todo_pro
+  url: <%= ENV['DATABASE_URL'] %>
